@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++: g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/bin/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "LD_LIBRARY_PATH", 
+                    "value": "${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8:${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/ia32/gcc4.8"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file"
+          }
+    ]
+}

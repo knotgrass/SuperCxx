@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g", "${file}",
+                // "-I", "${workspaceFolder}",
+                "-I",               "${workspaceFolder}/include/NumCpp-Version_2.9.0/include",
+                "-I",               "${workspaceFolder}/include/eigen-3.4.0",
+                "-I",               "${workspaceFolder}/include/eigen-3.4.0/unsupported",
+                "-I",               "${workspaceFolder}/include/oneapi-tbb-2021.8.0/include",
+                "-L/usr/local/lib", "${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8/libtbb.so",
+                "-o",               "${fileDirname}/bin/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: /usr/bin/g++"
+        }
+    ]
+}
