@@ -31,5 +31,5 @@
 
 
 ##### 5. Linking to the Library
-* Khi compile cần thêm file thư viện `.so` vào flag -L [xem ví dụ](.vscode/tasks.json) 
-* Khi run cần khai báo **folder**  chứa file `.so` (~~không phải path của file .so~~) vào biến môi trường `LD_LIBRARY_PATH` [E.g 1](.vscode/launch.json): `.vscode/launch.json`, [E.g 2](https://oneapi-src.github.io/oneDNN/dev_guide_link.html#linux-macos): oneDNN in anaconda
+* Khi compile cần thêm file thư viện `.so` vào flag -L [xem ví dụ](tasks.json) 
+* Khi run cần khai báo **folder**  chứa file `.so` (~~không phải path của file .so~~) vào biến môi trường `LD_LIBRARY_PATH` [E.g 1](launch.json): `.vscode/launch.json`, [E.g 2](https://oneapi-src.github.io/oneDNN/dev_guide_link.html#linux-macos): oneDNN in anaconda
