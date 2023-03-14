@@ -13,7 +13,9 @@
                 "-I",               "${workspaceFolder}/include/eigen-3.4.0",
                 "-I",               "${workspaceFolder}/include/eigen-3.4.0/unsupported",
                 "-I",               "${workspaceFolder}/include/oneapi-tbb-2021.8.0/include",
+                "-I",               "${CONDA_PREFIX}/envs/cpp/include",
                 "-L/usr/local/lib", "${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8/libtbb.so",
+                "-L${CONDA_PREFIX}/envs/cpp/lib", "-ldnnl",
                 "-o",               "${fileDirname}/bin/${fileBasenameNoExtension}"
             ],
             "options": {
