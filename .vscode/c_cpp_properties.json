@@ -8,7 +8,7 @@
                 "include/eigen-3.4.0/unsupported/Eigen",
                 "include/NumCpp-Version_2.9.0/include",
                 "include/oneapi-tbb-2021.8.0/include",
-                "include/oneDNN-3.0.1/include"
+                "${CONDA_PREFIX}/envs/cpp/include"
                 // "include/opencv-4.6.0/include/opencv4"
             ],
             "defines": [],
