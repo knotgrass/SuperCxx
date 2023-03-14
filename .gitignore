@@ -27,6 +27,7 @@
 *.lib
 
 # Executables
+**/bin/*
 *.exe
 *.out
 *.app
@@ -35,4 +36,3 @@
 include/eigen-3.4.0
 include/oneapi-tbb-2021.8.0
 include/NumCpp-Version_2.9.0
-include/oneDNN-3.0.1
