@@ -6,7 +6,7 @@
             "label": "C/C++: g++ build active file",
             "command": "/usr/bin/g++",
             "args": [
-                "-fdiagnostics-color=always",
+                "-fdiagnostics-color=always", "-std=c++17",
                 "-g", "${file}",
                 // "-I", "${workspaceFolder}",
                 "-I",               "${workspaceFolder}/include/NumCpp-Version_2.9.0/include",
@@ -14,7 +14,10 @@
                 "-I",               "${workspaceFolder}/include/eigen-3.4.0/unsupported",
                 "-I",               "${workspaceFolder}/include/oneapi-tbb-2021.8.0/include",
                 "-I",               "${CONDA_PREFIX}/envs/cpp/include",
+                "-I",               "/opt/intel/oneapi/mkl/2023.0.0/include",
+                "-I",               "${workspaceFolder}/include/llvm-2022-12/sycl/include",
                 "-L/usr/local/lib", "${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8/libtbb.so",
+                // "-L/opt/intel/oneapi/mkl/2023.0.0/lib/intel64", "",
                 "-L${CONDA_PREFIX}/envs/cpp/lib", "-ldnnl",
                 "-o",               "${fileDirname}/bin/${fileBasenameNoExtension}"
             ],
