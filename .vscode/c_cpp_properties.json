@@ -7,6 +7,7 @@
                 "${workspaceFolder}/include/eigen-3.4.0/Eigen",
                 "${workspaceFolder}/include/eigen-3.4.0/unsupported/Eigen",
                 "${workspaceFolder}/include/NumCpp-Version_2.9.0/include",
+                "${workspaceFolder}/include/opencv_contrib/include/opencv4",
                 // "${workspaceFolder}/include/oneapi-tbb-2021.8.0/include",
                 "${CONDA_PREFIX}/envs/cpp/include"
                 // "include/opencv-4.6.0/include/opencv4"
