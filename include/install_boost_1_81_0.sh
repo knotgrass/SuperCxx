@@ -23,7 +23,7 @@ sudo ./bootstrap.sh --prefix=/usr/
 #7. Install Boost on Ubuntu 20.04  or 22.04
 #Building the Boost C++ Libraries
 sudo ./b2 install
-
+cd ../.. && sudo rm -rf include/boost_1_81_0 
 #8. Use Boost library in C++ programming
 
 # #include <iostream>
