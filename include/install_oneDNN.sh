@@ -1,9 +1,8 @@
 #! /bin/bash
 
-CONDAENV = "cpp"    # edit conda env name
+CONDAENV="cpp"    # edit conda env name
 
-conda activate $CONDAENV
-conda install -c conda-forge onednn
+conda install -c conda-forge onednn --force-reinstall --name "$CONDAENV" -y
 
 # https://github.com/oneapi-src/oneDNN#installation
 # header file tại `${CONDA_PREFIX}/include` #! ~/anaconda3/envs/cpp/include
