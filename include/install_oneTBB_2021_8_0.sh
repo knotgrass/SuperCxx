@@ -1,4 +1,11 @@
 #! /bin/bash
+############                via anaconda                ############
+#https://www.intel.com/content/www/us/en/docs/oneapi/installation-guide-linux/2023-0/conda.html
+CONDAENV="cpp"
+conda install tbb tbb-devel -c intel -y --force-reinstall --name "$CONDAENV"
+
+
+############                #build from source          ############
 # edit lại working dir 
 cd ~/Documents/Cpp/SuperCpp
 
