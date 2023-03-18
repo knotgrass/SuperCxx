@@ -8,7 +8,7 @@ sudo apt-get install build-essential g++ python3-dev autotools-dev libicu-dev li
 
 #3. Download the Boost C++ library
 # Visit the Website `https://www.boost.org/`` and click on the Download button.
-mkdir include && cd include
+mkdir -p include && cd include
 wget https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.gz
 
 #4. Extract the Tar file

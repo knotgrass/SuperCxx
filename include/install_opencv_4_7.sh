@@ -15,7 +15,7 @@ sudo apt install -y qtcreator qt5-default
 
 cd "$workspaceFolder"
 # chuyển đến folder chứa thư viện
-cd include
+mkdir -p include && cd include
 
 # Download and unpack sources
 

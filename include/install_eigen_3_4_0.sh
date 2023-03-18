@@ -4,7 +4,7 @@
 cd ~/Documents/Cpp/SuperCpp
 
 # chuyển đến folder chứa thư viện
-cd include
+mkdir -p include && cd include
 
 
 URL="https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.zip"

@@ -3,7 +3,7 @@
 cd ~/Documents/Cpp/SuperCpp
 
 # chuyển đến dir 
-cd include
+mkdir -p include && cd include
 
 
 URL="https://github.com/oneapi-src/oneTBB/releases/download/v2021.8.0/oneapi-tbb-2021.8.0-lin.tgz"
