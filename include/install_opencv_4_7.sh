@@ -1,6 +1,6 @@
 #! /bin/bash
 # edit lại working dir , sử dụng abspath
-workspaceFolder=/home/tz/Documents/Cpp/SuperCpp
+workspaceFolder=/home/tz/Documents/programming/SuperCpp
 
 
 # Install minimal prerequisites (Ubuntu 18.04 as reference)
@@ -11,7 +11,7 @@ sudo apt install -y pkg-config
 # sudo apt install -y libgtk2.0-dev
 sudo apt install -y libgtk-3-dev libgtkglext1 libgtkglext1-dev
 sudo apt install -y gstreamer1.0-qt5 gstreamer1.0-opencv
-sudo apt install -y qtcreator qt5-default
+sudo apt install -y qtcreator qtbase5-dev qt5-qmake
 
 cd "$workspaceFolder"
 # chuyển đến folder chứa thư viện
@@ -35,7 +35,7 @@ cmake $workspaceFolder/include/opencv-4.7.0 \
     -DCMAKE_BUILD_TYPE=RELEASE \
     -DINSTALL_PYTHON_EXAMPLES=ON \
     -DINSTALL_C_EXAMPLES=ON \
-    -DWITH_TBB=ON \
+    -DWITH_TBB=OFF \
     -DWITH_OPENMP=ON    \
     -DWITH_EIGEN=ON \
     -DEIGEN_INCLUDE_PATH=$workspaceFolder/include/eigen-3.4.0 \
