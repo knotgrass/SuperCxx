@@ -1,6 +1,6 @@
 #! /bin/bash
 
-CONDAENV="cpp"    # edit conda env name
+CONDAENV="cxx"    # edit conda env name
 
 conda install -c conda-forge onednn --force-reinstall --name "$CONDAENV" -y
 

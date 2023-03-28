@@ -1,7 +1,7 @@
 #! /bin/bash
 ############                via anaconda                ############
 #https://www.intel.com/content/www/us/en/docs/oneapi/installation-guide-linux/2023-0/conda.html
-CONDAENV="cpp"
+CONDAENV="cxx"
 conda install tbb tbb-devel -c intel -y --force-reinstall --name "$CONDAENV"
 
 
