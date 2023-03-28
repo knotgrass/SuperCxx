@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/include/eigen-3.4.0/Eigen",
                 "${workspaceFolder}/include/eigen-3.4.0/unsupported/Eigen",
-                "${workspaceFolder}/include/NumCpp-Version_2.10.0/include",
+                "${workspaceFolder}/include/NumCpp-Version_2.10.1/include",
                 "${workspaceFolder}/include/opencv_contrib/include/opencv4",
                 // "${workspaceFolder}/include/oneapi-tbb-2021.8.0/include",
                 "${CONDA_PREFIX}/envs/cpp/include"

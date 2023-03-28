@@ -9,7 +9,7 @@
                 "-fdiagnostics-color=always", "-std=c++17",
                 "-g", "${file}",
                 // "-I", "${workspaceFolder}",
-                "-I",               "${workspaceFolder}/include/NumCpp-Version_2.9.0/include",
+                "-I",               "${workspaceFolder}/include/NumCpp-Version_2.10.1/include",
                 "-I",               "${workspaceFolder}/include/eigen-3.4.0",
                 "-I",               "${workspaceFolder}/include/eigen-3.4.0/unsupported",
                 "-I",               "${workspaceFolder}/include/opencv_contrib/include/opencv4",
