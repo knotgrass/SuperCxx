@@ -15,7 +15,7 @@ sudo apt install -y qtcreator qtbase5-dev qt5-qmake
 
 cd "$workspaceFolder"
 # chuyển đến folder chứa thư viện
-mkdir -p include && cd include
+mkdir -p third_party && cd third_party
 
 # Download and unpack sources
 
@@ -29,16 +29,16 @@ cd opencv-4.7.0
 mkdir -p build && cd build
 
 # Configure
-cmake $workspaceFolder/include/opencv-4.7.0 \
-    -DOPENCV_EXTRA_MODULES_PATH=$workspaceFolder/include/opencv_contrib-4.7.0/modules \
-    -DCMAKE_INSTALL_PREFIX=$workspaceFolder/include/opencv_contrib \
+cmake $workspaceFolder/third_party/opencv-4.7.0 \
+    -DOPENCV_EXTRA_MODULES_PATH=$workspaceFolder/third_party/opencv_contrib-4.7.0/modules \
+    -DCMAKE_INSTALL_PREFIX=$workspaceFolder/third_party/opencv_contrib \
     -DCMAKE_BUILD_TYPE=RELEASE \
     -DINSTALL_PYTHON_EXAMPLES=ON \
     -DINSTALL_C_EXAMPLES=ON \
     -DWITH_TBB=OFF \
     -DWITH_OPENMP=ON    \
     -DWITH_EIGEN=ON \
-    -DEIGEN_INCLUDE_PATH=$workspaceFolder/include/eigen-3.4.0 \
+    -DEIGEN_INCLUDE_PATH=$workspaceFolder/third_party/eigen-3.4.0 \
     -DWITH_OPENGL=OFF \
     -DWITH_GTK=OFF \
     -DWITH_QT=ON    \
@@ -54,9 +54,9 @@ cmake $workspaceFolder/include/opencv-4.7.0 \
 
 cmake --build . --target install -j$(nproc)
 cd "$workspaceFolder"
-# rm include/opencv_contrib.zip
-# rm include/opencv.zip
-sudo rm -rf include/opencv_contrib-4.7.0
-sudo rm -rf include/opencv-4.7.0
+# rm third_party/opencv_contrib.zip
+# rm third_party/opencv.zip
+sudo rm -rf third_party/opencv_contrib-4.7.0
+sudo rm -rf third_party/opencv-4.7.0
 
 echo "Current working directory: $(pwd)"

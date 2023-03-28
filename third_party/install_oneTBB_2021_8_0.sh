@@ -10,7 +10,7 @@ conda install tbb tbb-devel -c intel -y --force-reinstall --name "$CONDAENV"
 cd ~/Documents/Cpp/SuperCpp
 
 # chuyển đến dir 
-mkdir -p include && cd include
+mkdir -p third_party && cd third_party
 
 
 URL="https://github.com/oneapi-src/oneTBB/releases/download/v2021.8.0/oneapi-tbb-2021.8.0-lin.tgz"
