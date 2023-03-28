@@ -15,8 +15,8 @@
             "environment": [
                 {
                     "name": "LD_LIBRARY_PATH", 
-                    // "value": "${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8:${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/ia32/gcc4.8:/home/tz/anaconda3/envs/cpp/lib"
-                    "value": "/home/tz/anaconda3/envs/cpp/lib:${workspaceFolder}/include/opencv_contrib/lib" // lib khi install tbb via conda
+                    // "value": "${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8:${workspaceFolder}/include/oneapi-tbb-2021.8.0/lib/ia32/gcc4.8:/home/tz/anaconda3/envs/cxx/lib"
+                    "value": "/home/tz/anaconda3/envs/cxx/lib:${workspaceFolder}/include/opencv_contrib/lib" // lib khi install tbb via conda
                 }
             ],
             "externalConsole": false,
