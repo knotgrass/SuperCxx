@@ -4,7 +4,7 @@ workspaceFolder=/home/tz/Documents/programming/SuperCpp
 
 
 # Install minimal prerequisites (Ubuntu 18.04 as reference)
-source activate cpp
+source activate cxx
 pip install -U numpy
 sudo apt update && sudo apt install -y cmake g++ wget unzip
 sudo apt install -y pkg-config
