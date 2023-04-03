@@ -41,5 +41,4 @@ third_party/opencv-*
 third_party/opencv.zip
 third_party/opencv_contrib.zip
 
-# examlple
-examples/
+
