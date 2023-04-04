@@ -16,7 +16,7 @@
                 {
                     "name": "LD_LIBRARY_PATH", 
                     // "value": "${workspaceFolder}/third_party/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8:${workspaceFolder}/third_party/oneapi-tbb-2021.8.0/lib/ia32/gcc4.8:/home/tz/anaconda3/envs/cxx/lib"
-                    "value": "/home/tz/anaconda3/envs/cxx/lib:${workspaceFolder}/third_party/opencv_contrib/lib" // lib khi install tbb via conda
+                    "value": "/home/tz/anaconda3/envs/cxx/lib:${workspaceFolder}/third_party/opencv_contrib/lib:/home/tz/anaconda3/envs/cxx/lib/python3.10/site-packages/torch/lib" // lib khi install tbb via conda
                 }
             ],
             "externalConsole": false,
