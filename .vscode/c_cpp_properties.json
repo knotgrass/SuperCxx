@@ -9,7 +9,7 @@
                 "${workspaceFolder}/third_party/NumCpp-Version_2.10.1/include",
                 "${workspaceFolder}/third_party/opencv_contrib/include/opencv4",
                 // "${workspaceFolder}/third_party/oneapi-tbb-2021.8.0/include",
-                "${CONDA_PREFIX}/envs/cpp/include",
+                "${CONDA_PREFIX}/envs/cxx/include",
                 "${CONDA_PREFIX}/envs/cxx/lib/python3.10/site-packages/torch/include",
                 "${CONDA_PREFIX}/envs/cxx/lib/python3.10/site-packages/torch/include/torch/csrc/api/include"
             ],
