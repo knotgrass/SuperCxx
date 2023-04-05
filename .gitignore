@@ -36,9 +36,5 @@
 third_party/eigen-3.4.0
 third_party/oneapi-tbb-2021.8.0
 third_party/NumCpp-Version_*
-third_party/opencv_contrib*
-third_party/opencv-*
-third_party/opencv.zip
-third_party/opencv_contrib.zip
-
-
+third_party/opencv*
+third_party/googletest-*
