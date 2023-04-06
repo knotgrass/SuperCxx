@@ -1,5 +1,9 @@
 #!/bin/bash
-#0. 
+
+#0. edit lại working dir 
+workspaceFolder=~/Documents/Cxx/SuperCpp
+
+cd "$workspaceFolder"
 source activate cxx
 #1. Update Ubuntu Linux
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove
@@ -25,4 +29,4 @@ make install
 cd ../.. 
 cd liboqs-python-0.7.2
 python setup.py install
-cd ..
+cd "$workspaceFolder"

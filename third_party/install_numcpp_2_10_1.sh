@@ -1,8 +1,9 @@
 #! /bin/bash
 
 # edit lại working dir 
-cd ~/Documents/Cpp/SuperCpp
+workspaceFolder=~/Documents/Cxx/SuperCpp
 
+cd "$workspaceFolder"
 # chuyển đến folder chứa thư viện
 mkdir -p third_party && cd third_party
 
@@ -13,5 +14,5 @@ wget -N $URL
 unzip -q $FILENAME
 rm $FILENAME
 
-cd ..
+cd "$workspaceFolder"
 echo "Current working directory: $(pwd)"

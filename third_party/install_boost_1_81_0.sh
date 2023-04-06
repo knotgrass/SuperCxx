@@ -1,4 +1,6 @@
 #!/bin/bash
+workspaceFolder=~/Documents/Cxx/SuperCpp
+cd "$workspaceFolder"
 
 #1. Update Ubuntu Linux
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove

@@ -7,7 +7,8 @@ conda install tbb tbb-devel -c intel -y --force-reinstall --name "$CONDAENV"
 
 ############                #build from source          ############
 # edit lại working dir 
-cd ~/Documents/Cpp/SuperCpp
+workspaceFolder=~/Documents/Cxx/SuperCpp
+cd "$workspaceFolder"
 
 # chuyển đến dir 
 mkdir -p third_party && cd third_party
@@ -40,5 +41,5 @@ done
 
 tar -xf $FILENAME
 rm $FILENAME
-cd ..
+cd "$workspaceFolder"
 echo "Current working directory: $(pwd)"
