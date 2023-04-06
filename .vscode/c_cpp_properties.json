@@ -12,6 +12,7 @@
                 // "${workspaceFolder}/third_party/googletest-1.13.0/googletest/include",
                 // "${workspaceFolder}/third_party/googletest-1.13.0/googlemock/include",
                 "${workspaceFolder}/third_party/abseil-cpp/install/include",
+                "${workspaceFolder}/third_party/benchmark/install/include",
                 "${CONDA_PREFIX}/envs/cxx/include",
                 "${CONDA_PREFIX}/envs/cxx/lib/python3.10/site-packages/torch/include",
                 "${CONDA_PREFIX}/envs/cxx/lib/python3.10/site-packages/torch/include/torch/csrc/api/include"
