@@ -8,6 +8,7 @@
             "args": [
                 "-fdiagnostics-color=always", "-std=c++17", "-g", 
                 "${file}", "-o", "${fileDirname}/bin/${fileBasenameNoExtension}",
+                "-pthread",
                 // "-I", "${workspaceFolder}",
                 "-I",               "${workspaceFolder}/third_party/NumCpp-Version_2.10.1/include",
                 "-I",               "${workspaceFolder}/third_party/eigen-3.4.0",
@@ -26,7 +27,7 @@
                 "-L${CONDA_PREFIX}/envs/cxx/lib/python3.10/site-packages/torch/lib", 
                 "-lc10", "-ltorch_cpu",// "-ltorch_global_deps", "-ltorch_python", "-ltorch", "-lshm",
                 "-D_GLIBCXX_USE_CXX11_ABI=0", 
-                "-pthread",
+                "-I",               "${workspaceFolder}/third_party/abseil-cpp/install/include",
             ],
             "options": {
                 "cwd": "${fileDirname}"
