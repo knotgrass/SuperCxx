@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # edit lại working dir 
-workspaceFolder=/home/tz/Documents/Cxx/SuperCpp
+workspaceFolder=/home/tz/Documents/programming/SuperCpp
 
 cd "$workspaceFolder"
 
@@ -15,7 +15,7 @@ cd abseil-cpp
 echo "\n"
 echo "Start build Absl"
 
-mkdir build && cd build
+mkdir -p build && cd build
 cmake .. \
     -DABSL_BUILD_TESTING=ON \
     -DABSL_USE_GOOGLETEST_HEAD=ON \
