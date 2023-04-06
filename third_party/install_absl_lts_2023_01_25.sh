@@ -8,6 +8,7 @@ cd "$workspaceFolder"
 # chuyển đến folder chứa thư viện
 mkdir -p third_party && cd third_party
 
+# https://abseil.io/docs/cpp/tools/cmake-installs
 git clone https://github.com/abseil/abseil-cpp.git -b lts_2023_01_25
 cd abseil-cpp
 
