@@ -17,3 +17,5 @@ sudo apt update
 
 # install 
 sudo apt install intel-oneapi-mkl
+# MKL example in C
+# https://www.intel.com/content/www/us/en/docs/onemkl/developer-guide-macos/2023-0/code-examples.html
