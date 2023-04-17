@@ -14,8 +14,8 @@ cd "$workspaceFolder"
 mkdir -p third_party && cd third_party
 
 
-URL="https://github.com/oneapi-src/oneTBB/releases/download/v2021.8.0/oneapi-tbb-2021.8.0-lin.tgz"
-FILENAME="oneapi-tbb-2021.8.0-lin.tgz"
+URL="https://github.com/oneapi-src/oneTBB/releases/download/v2021.9.0/oneapi-tbb-2021.9.0-lin.tgz"
+FILENAME="oneapi-tbb-2021.9.0-lin.tgz"
 
 # Thực hiện download file cho đến khi checksum đúng
 while true; 
@@ -27,8 +27,8 @@ do
     HASH=$(sha256sum $FILENAME | cut -d ' ' -f 1)
 
     # Kiểm tra xem sha256sum có đúng không
-    # https://github.com/oneapi-src/oneTBB/releases/tag/v2021.8.0
-    if [ "$HASH" = "ee410e991bb44ce11437fbf93abedc7c4b1d0cb254e9b91cc2e0ddb0f5375566" ]
+    # https://github.com/oneapi-src/oneTBB/releases/tag/v2021.9.0
+    if [ "$HASH" = "1e8f4d584c209b1a1d1935e72c0a86c16e65e6d2859cb96736ec6ed72c6123f5" ]
     then
         echo "Checksum hợp lệ. Bắt đầu giải nén..."
         tar -xf $FILENAME
