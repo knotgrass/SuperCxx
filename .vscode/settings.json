@@ -6,6 +6,9 @@
     // Đang thêm folder chứa file ".so" tại `.vscode/launch.json`.configurations."environment"
     // chỉ dùng 1 trong 2 file `.vscode/launch.json` hoặc `.vscode/settings.json`
     "files.associations": {
+        "*.py.in": "python",
+        "*.pyi.in": "python",
+        "editor.defaultFormatter": "omnilib.ufmt",
         "*.pyx": "cython",
         "dense": "cpp",
         "eigen": "cpp",
