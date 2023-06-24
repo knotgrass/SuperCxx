@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/third_party/eigen-3.4.0/Eigen",
                 "${workspaceFolder}/third_party/eigen-3.4.0/unsupported/Eigen",
-                "${workspaceFolder}/third_party/NumCpp-Version_2.10.1/include",
+                "${workspaceFolder}/third_party/NumCpp-Version_2.11.0/include",
                 "${workspaceFolder}/third_party/opencv_contrib/include/opencv4",
                 // "${workspaceFolder}/third_party/oneapi-tbb-2021.8.0/include",
                 // "${workspaceFolder}/third_party/googletest-1.13.0/googletest/include",
