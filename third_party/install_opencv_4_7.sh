@@ -1,6 +1,6 @@
 #! /bin/bash
 # edit lại working dir , sử dụng abspath
-workspaceFolder=/home/tz/Documents/programming/SuperCpp
+workspaceFolder=/home/tz/Documents/programming/SuperCxx
 
 
 # Install minimal prerequisites (Ubuntu 18.04 as reference)
@@ -8,7 +8,7 @@ source activate cxx
 pip install -U numpy
 sudo apt update && sudo apt install -y cmake g++ wget unzip
 sudo apt install -y pkg-config
-# sudo apt install -y libgtk2.0-dev
+sudo apt install -y libgtk2.0-dev
 sudo apt install -y libgtk-3-dev libgtkglext1 libgtkglext1-dev
 sudo apt install -y gstreamer1.0-qt5 gstreamer1.0-opencv
 sudo apt install -y qtcreator qtbase5-dev qt5-qmake
