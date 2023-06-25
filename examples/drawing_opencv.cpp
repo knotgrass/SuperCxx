@@ -179,3 +179,21 @@ int main(int /* argc */, char** argv)
     waitKey();
     return 0;
 }
+
+/*
+Note use / don't use `-D_GLIBCXX_USE_CXX11_ABI=0` -flag
+https://chat.openai.com/share/22b03035-383b-420a-8370-f0b5f53c08c4
+
+Note compile cmd
+/usr/bin/g++ -fdiagnostics-color=always -std=c++17 -g \
+    /home/tz/Documents/programming/SuperCxx/examples/drawing_opencv.cpp \
+    -o /home/tz/Documents/programming/SuperCxx/examples/bin/drawing_opencv \
+    -I /home/tz/Documents/programming/SuperCxx/third_party/opencv_contrib/include/opencv4 \
+    -L /home/tz/Documents/programming/SuperCxx/third_party/opencv_contrib/lib \
+    -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -lgthread-2.0 -lglib-2.0
+
+
+Note run cmd
+sudo ldconfig
+export LD_LIBRARY_PATH=/home/tz/Documents/programming/SuperCxx/third_party/opencv_contrib/lib:$LD_LIBRARY_PATH
+*/
