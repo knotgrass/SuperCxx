@@ -14,7 +14,16 @@ struct Net : torch::nn::Module {
 };
 
 int main(int argc, char* argv[] ) {
+    torch::Device* pdevice;
     torch::Tensor tensor = torch::rand({2, 3});
+
+    if (torch::cuda::is_available())
+        pdevice = new torch::Device(torch::kCUDA);
+    else
+        pdevice = new torch::Device(torch::kCPU);
+
+    tensor = tensor.to(*pdevice);
+    delete pdevice;
     std::cout << tensor << std::endl;
     return 0;
 }
