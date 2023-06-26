@@ -1,7 +1,7 @@
 #! /bin/bash
 
-# edit lại working dir 
-workspaceFolder=/home/tz/Documents/programming/SuperCpp
+# edit lại working dir
+workspaceFolder=/home/tz/Documents/programming/SuperCxx
 
 cd "$workspaceFolder"
 
