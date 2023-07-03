@@ -18,6 +18,8 @@
                 // "-I","/usr/local/include",
                 // "-I","/usr/include/x86_64-linux-gnu",
                 // "-I","/usr/include",
+                // "-L","/usr/lib",
+                // "-L","/usr/lib/gcc/x86_64-linux-gnu/12/",
                 "-I",               "${workspaceFolder}/third_party/opencv_contrib/include/opencv4",
                 "-L",               "${workspaceFolder}/third_party/opencv_contrib/lib",
                 "-lopencv_core", "-lopencv_imgproc", "-lopencv_highgui", "-lopencv_imgcodecs",
