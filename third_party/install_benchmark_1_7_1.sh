@@ -1,5 +1,5 @@
 #! /bin/bash
-workspaceFolder=/home/tz/Documents/programming/SuperCpp
+workspaceFolder=/home/tz/Documents/programming/SuperCxx
 cd "$workspaceFolder"
 
 mkdir -p third_party && cd third_party
