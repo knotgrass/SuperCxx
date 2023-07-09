@@ -1,5 +1,5 @@
 #!/bin/bash
-workspaceFolder=~/Documents/Cxx/SuperCpp
+workspaceFolder=~/Documents/programming/SuperCxx
 cd "$workspaceFolder"
 
 #1. Update Ubuntu Linux
