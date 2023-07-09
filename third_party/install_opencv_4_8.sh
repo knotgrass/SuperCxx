@@ -1,6 +1,7 @@
 #! /bin/bash
 # edit lại working dir , sử dụng abspath
 workspaceFolder=/home/tz/Documents/programming/SuperCxx
+version=4.8.0
 
 
 # Install minimal prerequisites (Ubuntu 18.04 as reference)
@@ -19,18 +20,18 @@ mkdir -p third_party && cd third_party
 
 # Download and unpack sources
 
-wget -O opencv.zip https://github.com/opencv/opencv/archive/refs/tags/4.7.0.zip
-wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/refs/tags/4.7.0.zip
+wget -O opencv.zip https://github.com/opencv/opencv/archive/refs/tags/$version.zip
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/refs/tags/$version.zip
 unzip -q opencv.zip
 unzip -q opencv_contrib.zip
 
 # Create build directory and switch into it
-cd opencv-4.7.0
+cd opencv-$version
 mkdir -p build && cd build
 
 # Configure
-cmake $workspaceFolder/third_party/opencv-4.7.0 \
-    -DOPENCV_EXTRA_MODULES_PATH=$workspaceFolder/third_party/opencv_contrib-4.7.0/modules \
+cmake $workspaceFolder/third_party/opencv-$version \
+    -DOPENCV_EXTRA_MODULES_PATH=$workspaceFolder/third_party/opencv_contrib-$version/modules \
     -DCMAKE_INSTALL_PREFIX=$workspaceFolder/third_party/opencv_contrib \
     -DCMAKE_BUILD_TYPE=RELEASE \
     -DINSTALL_PYTHON_EXAMPLES=ON \
@@ -56,7 +57,7 @@ cmake --build . --target install -j$(nproc)
 cd "$workspaceFolder"
 # rm third_party/opencv_contrib.zip
 # rm third_party/opencv.zip
-sudo rm -rf third_party/opencv_contrib-4.7.0
-sudo rm -rf third_party/opencv-4.7.0
+sudo rm -rf third_party/opencv_contrib-$version
+sudo rm -rf third_party/opencv-$version
 
 echo "Current working directory: $(pwd)"
