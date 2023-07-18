@@ -2,12 +2,12 @@
 #include <algorithm>
 #include <cmath>
 
-int main(){
+int main(int argc, char* argv[] ){
     const unsigned int size = 100'000'000;
     float* vals = new float[size];
     std::fill_n(vals, size, 1.0f);
 
-    double total = 0.0f;
+    double total = 0.0;
     float ss = 0.0f;
 
     for (int i=0; i<size; ++i){
