@@ -9,7 +9,7 @@
                 "-fdiagnostics-color=always", "-std=c++17", "-g",
                 "${file}", "-o", "${fileDirname}/bin/${fileBasenameNoExtension}",
                 "-pthread",
-                // "-I", "${workspaceFolder}",
+                "-I", "${workspaceFolder}/third_party/thread-pool-3.5.0",
                 "-I",               "${workspaceFolder}/third_party/NumCpp-Version_2.11.0/include",
                 "-I",               "${workspaceFolder}/third_party/eigen-3.4.0",
                 "-I",               "${workspaceFolder}/third_party/eigen-3.4.0/unsupported",
