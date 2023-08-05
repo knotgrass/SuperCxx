@@ -1,15 +1,15 @@
 {
     // "terminal.integrated.env.linux": {
-    //     "LD_LIBRARY_PATH": "third_party/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8:${env:LD_LIBRARY_PATH}" 
-    // }, 
+    //     "LD_LIBRARY_PATH": "third_party/oneapi-tbb-2021.8.0/lib/intel64/gcc4.8:${env:LD_LIBRARY_PATH}"
+    // },
     // thêm folder path chứa file ".so"
     // Đang thêm folder chứa file ".so" tại `.vscode/launch.json`.configurations."environment"
     // chỉ dùng 1 trong 2 file `.vscode/launch.json` hoặc `.vscode/settings.json`
     "files.associations": {
+        "*.pyx": "cython",
         "*.py.in": "python",
         "*.pyi.in": "python",
         "editor.defaultFormatter": "omnilib.ufmt",
-        "*.pyx": "cython",
         "dense": "cpp",
         "eigen": "cpp",
         "iostream": "cpp",
@@ -152,6 +152,8 @@
         "openglsupport": "cpp",
         "sparseextra": "cpp",
         "specialfunctions": "cpp",
-        "splines": "cpp"
+        "splines": "cpp",
+        "__nullptr": "cpp",
+        "climits": "cpp"
     }
 }
