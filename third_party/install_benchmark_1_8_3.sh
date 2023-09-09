@@ -1,9 +1,9 @@
 #! /bin/bash
-workspaceFolder=/home/tz/Documents/programming/SuperCxx
+workspaceFolder="$(dirname "$(dirname "$(realpath "$0")")")"
 cd "$workspaceFolder"
 
 mkdir -p third_party && cd third_party
-git clone https://github.com/google/benchmark.git -b v1.7.1
+git clone https://github.com/google/benchmark.git -b v1.8.3
 cd benchmark
 
 echo "\n"
@@ -19,7 +19,7 @@ cmake -E chdir "build" cmake \
 # cmake -DCMAKE_BUILD_TYPE=Release -S . -B "build"
 
 # Build the library.
-cmake --build "build" --config Release
+sudo cmake --build "build" --config Release --target install
 cmake -E chdir "build" ctest --build-config Release
 
 # install
