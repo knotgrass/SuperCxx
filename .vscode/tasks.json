@@ -39,6 +39,8 @@
                 "-I",               "${workspaceFolder}/third_party/abseil-cpp/install/include",
                 // "-I",               "${workspaceFolder}/third_party/benchmark/install/include",
                 // "-L",               "${workspaceFolder}/third_party/benchmark/install/lib", "-lbenchmark",
+                "-I${workspaceFolder}/third_party/glog/install/include",
+                "-L${workspaceFolder}/third_party/glog/install/lib", "-lglog"
                 // "-O3", "-march=native", "-mtune=native", "-flto", "-fuse-linker-plugin"
             ],
             "options": {
