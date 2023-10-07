@@ -1,5 +1,5 @@
-#include "NumCpp.hpp"
-#include <Eigen/Dense>
+#include "NumCpp.hpp"       // version <= 2.11
+#include <Eigen/Dense>      // version 3.4
 #include <iostream>
 
 
@@ -14,7 +14,7 @@ int main(){
     std::cout << "ncA:\n" << ncA << std::endl;
     std::cout << "ncB:\n" << ncB << std::endl;
 
-    // map the arrays to Eigen 
+    // map the arrays to Eigen
     auto eigenA = EigenIntMatrixMap(ncA.data(), ncA.numRows(), ncA.numCols());
     auto eigenB = EigenIntMatrixMap(ncB.data(), ncB.numRows(), ncB.numCols());
 
