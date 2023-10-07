@@ -154,6 +154,7 @@
         "specialfunctions": "cpp",
         "splines": "cpp",
         "__nullptr": "cpp",
-        "climits": "cpp"
+        "climits": "cpp",
+        "hash_set": "cpp"
     }
 }

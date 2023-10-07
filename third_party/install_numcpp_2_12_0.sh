@@ -1,14 +1,15 @@
 #! /bin/bash
 
-# edit lại working dir
-workspaceFolder=~/Documents/Cxx/SuperCpp
+workspaceFolder="$(dirname "$(dirname "$(realpath "$0")")")"
+version=2.12.0
 
 cd "$workspaceFolder"
+# rm -rf third_party/NumCpp-Version_*
+
 # chuyển đến folder chứa thư viện
 mkdir -p third_party && cd third_party
-
-URL="https://github.com/dpilger26/NumCpp/archive/refs/tags/Version_2.11.0.zip"
-FILENAME="Version_2.11.0.zip"
+URL="https://github.com/dpilger26/NumCpp/archive/refs/tags/Version_$version.zip"
+FILENAME="Version_$version.zip"
 wget -N $URL
 
 unzip -q $FILENAME
