@@ -10,7 +10,7 @@
                 "${file}", "-o", "${fileDirname}/bin/${fileBasenameNoExtension}",
                 "-pthread",
                 "-I", "${workspaceFolder}/third_party/thread-pool-3.5.0",
-                "-I",               "${workspaceFolder}/third_party/NumCpp-Version_2.12.0/include",
+                "-I",               "${workspaceFolder}/third_party/NumCpp-Version_2.12.1/include",
                 "-I",               "${workspaceFolder}/third_party/eigen-3.4.0",
                 "-I",               "${workspaceFolder}/third_party/eigen-3.4.0/unsupported",
                 //echo | g++ -E -Wp,-v -

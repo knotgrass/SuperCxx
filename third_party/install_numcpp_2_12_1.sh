@@ -1,7 +1,7 @@
 #! /bin/bash
 
 workspaceFolder="$(dirname "$(dirname "$(realpath "$0")")")"
-version=2.12.0
+version=2.12.1
 
 cd "$workspaceFolder"
 # rm -rf third_party/NumCpp-Version_*
