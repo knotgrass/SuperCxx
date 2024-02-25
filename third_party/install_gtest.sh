@@ -5,14 +5,13 @@ workspaceFolder="$(dirname "$(dirname "$(realpath "$0")")")"
 cd "$workspaceFolder"
 
 # chuyển đến folder chứa thư viện
-mkdir -p third_party && cd third_party
+mkdir -p third_party
+# git submodule add https://github.com/google/googletest.git third_party/googletest
+cd third_party
+# git clone https://github.com/google/googletest.git
+cd googletest
+git checkout v$version
 
-wget -O googletest-$version.zip https://github.com/google/googletest/archive/refs/tags/v$version.zip
-unzip -q googletest-$version.zip
-rm googletest-$version.zip
-
-cd googletest-$version
-mkdir install
 mkdir build
 cd build
 
@@ -21,8 +20,7 @@ cd build
 # cmake ../
 
 # https://github.com/google/googletest/issues/868#issuecomment-245593106
-# cmake ../ -DCMAKE_INSTALL_PREFIX=$workspaceFolder/third_party/googletest-$version/install
-cmake ../
+cmake ../ -DCMAKE_INSTALL_PREFIX=$workspaceFolder/Libs/googletest/install
 
 make -j$(nproc)
 sudo make install
