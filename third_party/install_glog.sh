@@ -1,5 +1,8 @@
 #! /bin/bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> a43a515 (gtest & glog)
 version="0.7.0"
 workspaceFolder="$(dirname "$(dirname "$(realpath "$0")")")"
 cd "$workspaceFolder"
