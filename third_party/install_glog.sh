@@ -1,5 +1,5 @@
 #! /bin/bash
-version=0.7.0
+version="0.7.0"
 workspaceFolder="$(dirname "$(dirname "$(realpath "$0")")")"
 cd "$workspaceFolder"
 mkdir -p third_party
@@ -19,4 +19,4 @@ cmake --build build
 cmake --build build --target test
 #5
 cmake --build build --target install
-cd "$workspaceFolder"
+cd $workspaceFolder
