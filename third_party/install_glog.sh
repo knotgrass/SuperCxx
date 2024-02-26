@@ -1,8 +1,11 @@
 #! /bin/bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> a43a515 (gtest & glog)
+=======
+>>>>>>> a43a5155923183aa3cdd4f587ea7ec5d11606898
 version="0.7.0"
 workspaceFolder="$(dirname "$(dirname "$(realpath "$0")")")"
 cd "$workspaceFolder"
