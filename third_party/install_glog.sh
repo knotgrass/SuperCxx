@@ -1,12 +1,14 @@
 #! /bin/bash
+
 version="0.7.0"
 workspaceFolder="$(dirname "$(dirname "$(realpath "$0")")")"
 cd "$workspaceFolder"
 mkdir -p third_party
 # git submodule add https://github.com/google/glog.git third_party/glog
 cd third_party
+
 #1
-# git clone https://github.com/google/glog.git
+# git clone https://github.com/google/glog.git -b v0.7.0
 cd glog
 git checkout v$version
 #2
